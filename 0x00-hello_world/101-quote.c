@@ -1,10 +1,8 @@
-#include <stdio.h>
-
+#include <unistd.h>
 /**
- * main - Entry point of the program
+ *main-program entry point.
  *
- * Return: Always 0 (code success)
- *
+ *Return: 1 on success.
  */
 int main(void)
 {
