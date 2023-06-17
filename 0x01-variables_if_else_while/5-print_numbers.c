@@ -1,7 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 
 /**
  * main -This code  Prints numbers from 0 to 9.
