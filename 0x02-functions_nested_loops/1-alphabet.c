@@ -9,7 +9,7 @@ void print_alphabet(void)
 
 	for (vim = 'a'; vim <= 'z'; vim++)
 	{
-		_putchar(vimm);
+		_putchar(vim);
 	}
 
 	_putchar('\n');
