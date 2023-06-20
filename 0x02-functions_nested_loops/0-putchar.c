@@ -1,14 +1,4 @@
-#include <unistd.h>
-
-/**
- * _putchar - Writes a character to the standard output
- *
- * Return: On success, the character written. On error, -1 is returned.
- */
-int _putchar(char c)
-{
-    return write(1, &c, 1);
-}
+#include "main.h"
 
 /**
  * main - Entry point of the program
@@ -19,16 +9,16 @@ int _putchar(char c)
  */
 int main(void)
 {
-    char *str = "_putchar";
-    int i = 0;
+	int i = 0;
+	char *str = "_putchar";
 
-    while (str[i] != '\0')
-    {
-        _putchar(str[i]);
-        i++;
-    }
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
 
-    _putchar('\n');
+	_putchar('\n');
 
-    return (0);
+	return (0);
 }
