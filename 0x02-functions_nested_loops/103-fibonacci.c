@@ -1,11 +1,11 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - Entry point of program
+ * main - Entry point of the program
  *
  * Description: Prints the sum of even-valued
- *		Fibonacci sequence not exceed
- *		4million
+ *              Fibonacci sequence not exceeding
+ *              4 million
  *
  * Return: Always 0 (Success)
 */
@@ -13,7 +13,7 @@
 int main(void)
 {
 	unsigned long num1 = 0, num2 = 1, sum;
-	float total_sum;
+	unsigned long long total_sum = 0;
 
 	while (1)
 	{
@@ -28,8 +28,7 @@ int main(void)
 		num1 = num2;
 		num2 = sum;
 	}
-	printf("%.0f\n", total_sum);
+	printf("%llu\n", total_sum);
 
 	return (0);
 }
-
