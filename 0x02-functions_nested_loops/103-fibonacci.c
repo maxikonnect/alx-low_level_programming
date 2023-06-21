@@ -8,27 +8,22 @@
  *              4 million
  *
  * Return: Always 0 (Success)
-*/
-
+ */
 int main(void)
 {
-	unsigned long num1 = 0, num2 = 1, sum;
-	unsigned long long total_sum = 0;
+	unsigned long a = 1, b = 2, temp, limit = 4000000, total_sum = 0;
 
-	while (1)
+	while (a <= limit)
 	{
-		sum = num1 + num2;
+		if (a % 2 == 0)
+			total_sum += a;
 
-		if (sum > 4000000)
-			break;
-
-		if ((sum % 2) == 0)
-			total_sum += sum;
-
-		num1 = num2;
-		num2 = sum;
+		temp = a + b;
+		a = b;
+		b = temp;
 	}
-	printf("%llu\n", total_sum);
+
+	printf("%lu\n", total_sum);
 
 	return (0);
 }
