@@ -1,7 +1,7 @@
-include "lists.h"
+#include "lists.h"
 
 /**
- * add_dnodeint_end - A new node added at the end
+ * add_dnodeint_end - Adds a new node at the end
  *
  * @head: struct
  *
